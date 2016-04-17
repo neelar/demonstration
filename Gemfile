@@ -50,6 +50,6 @@ end
 
 
 group :production do
-  gem 'sqlite3-ruby', :require => 'sqlite3'
+  gem 'pg'
   gem 'rails_12factor'
 end
