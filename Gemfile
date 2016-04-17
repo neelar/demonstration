@@ -36,7 +36,7 @@ gem 'bcrypt'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-  gem 'sqlite3','1.3.11'
+  gem 'sqlite3-ruby', :require => 'sqlite3'
   gem 'pry'
 end
 
@@ -50,6 +50,6 @@ end
 
 
 group :production do
-  gem 'pg'
+  gem 'sqlite3-ruby', :require => 'sqlite3'
   gem 'rails_12factor'
 end
